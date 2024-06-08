@@ -3,7 +3,6 @@ class Student:
     def __init__(self, name):
         self.name = name
         self._enrollments = []
-
     def enroll(self, course):
         if isinstance(course, Course):
             enrollment = Enrollment(self, course)
